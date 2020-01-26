@@ -1,6 +1,6 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Material Theme Palenight High Contrast",
+    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
     "editor.formatOnSave": true,
     "workbench.tree.renderIndentGuides": "always",
     "editor.fontSize": 16,
