@@ -188,7 +188,8 @@ bindsym $mod+r mode "resize"
 #My Mods ( Nidal)
 #
 #bind a key to lock the PC
-bindsym $mod+Shift+Delete  exec i3lock
+bindsym $mod+Shift+Delete  exec $HOME/.dotfiles/scripts/power-on-off-i3.sh
+
 for_Window [class="."] border pixel 2
 #Sound
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume # increase the volume
