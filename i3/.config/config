@@ -127,7 +127,7 @@ bindsym $mod+underscore workspace $ws8
 bindsym $mod+ccedilla workspace $ws9
 bindsym $mod+agrave workspace $ws10
 
-assign [class="Atom"] 3
+assign [class="Code"] 3
 assign [class="Gnome-terminal"] 1
 assign [class="Firefox-esr"] 2
 # move focused container to workspace
@@ -202,3 +202,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id compton
 exec --no-startup-id feh --bg-fill $HOME/wallpaper/wallpaper.jpg
 exec --no-startup-id wal -i $HOME/wallpaper/wallpaper.jpg
+exec --no-startup-id exec ~/.dropbox-dist/dropboxd
