@@ -1,0 +1,26 @@
+FROM arm64v8/alpine
+
+apk add --update openvpn iptables bash easy-rs
+
+1-packages to install:
+  openvpn
+  easy-rsa
+  bash
+  iptables
+
+2-Create certificats
+
+
+darathor/openvpn
+
+docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm darathor/openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM
+
+docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm -it darathor/openvpn ovpn_initpki
+
+
+docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm neeeds/pine64 ovpn_genconfig -u udp://VPN.SERVERNAME.COM
+docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm -it neeeds/pine64:first ovpn_initpki
+
+
+docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm -it neeeds/pine64:first easyrsa build-client-full ziko nopass
+docker run -v $OVPN_DATA:/etc/openvpn -d -p 1194:1194/udp --cap-add=NET_ADMIN neeeds/pine64:first

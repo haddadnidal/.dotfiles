@@ -1,0 +1,54 @@
+*******************************************
+Conditions sur les entiers
+*******************************************
+-eq	égal (equal)
+-lt	inferieur (less than )
+-le	inférieur ou égal (less or equal )
+-ne	different (non equal )
+-gt	supérieur ( greater than )
+-ge	superieur ou égal ( greater or equal )
+
+
+*******************************************
+Conditions sur les chaines de caractères
+*******************************************
+-n	chaine non vide
+-z	chaine vide
+=	  chaine égale
+!=	chaine non égale
+<	  plus petite ( ordre ASCII )
+>	  plus grande ( ordre ASCII )
+
+*******************************************
+Conditions sur les fichiers
+*******************************************
+***Exemple  : [[ -Condition ]]
+-e	Si le fichier existe
+-d	Si le fichier est un répertoire
+-f  SI le fichier est un fichier
+-L	Si le fichier est un lien symbolique
+-r 	Si ce fichier est lisible
+-w	Si le fichier est modifiable
+-x	Si le fichier est exécutable
+fichier1 -nt fichier2	Si le fichier1 est plus récent que fichier2
+fichier1 -ot fichier2	Si le fichier1 est plus vieux que fichier2
+-o	Si on est le proprietaire du fichier
+
+*******************************************
+	Commandes spéciales
+*******************************************
+$?	                                Lire le code de retour de la commande précedente.
+$#	                                Variable qui contient tous les paramètres
+${#var}	                            récuperer la longueur de la chaine.
+${varNomFichier:9:15}	              récuperer la longueur de la position 9 à 15 inclus
+
+
+*******************************************
+Création d'un tableau et manipulation
+*******************************************
+tableau=("1" "2" "3" )	                           créer un tableau avec trois variables
+${tableau[*]}	                                     afficher tous les élements d'un tableau
+${#tableau[*]}	                                   afficher le nombres d'élements d'un tableau
+${tableau[1]}	                                     afficher la valeur d'indice 1 d'un tableau
+unset ${tableau[1]}  	                             effacer la variable d'ou l'indicce est 1
+tableau=([0]="val1" [5]="val6" [9]="val10")	       créer un tableau avec des indices
