@@ -12,3 +12,22 @@
 #myscripts
 #A script that lists all custom scripts made by me 
 # take the third line as a description of the file 
+
+
+1-check stow file type.
+stow -vRt ~ vscode  
+
+2-put a package to install file
+  i- polybar script (https://github.com/ayosec/polybar-debian)
+  ii- i3-gaps script ( https://github.com/Airblader/i3/wiki/Building-from-source)
+  iii- install fonts script
+
+3-i3 shutdown menu
+  i-modify the i3 settings to execute the script
+
+  bindsym $mod+Shift+Delete  exec $HOME/.dotfiles/scripts/power-on-off-i3.sh
+
+
+4-install dunst (https://dunst-project.org/download/)
+
+5-install i3-quit mode (https://github.com/vrde/i3-quiet)
