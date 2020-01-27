@@ -5,14 +5,14 @@
 #clipboard_copy.sh
 ##a script that takes a file as input and copy its output to clipboard to paste 
 ##!!need xclip "sudo apt-get install xclip"
-    
 #exemple to script on 
 ### uptime | xclip -selection clipboard ###
 
-#myscripts
+#myscripts.sh
 #A script that lists all custom scripts made by me 
 # take the third line as a description of the file 
 
+#########################################################################"
 
 1-check stow file type.
 stow -vRt ~ vscode  
@@ -31,3 +31,8 @@ stow -vRt ~ vscode
 4-install dunst (https://dunst-project.org/download/)
 
 5-install i3-quit mode (https://github.com/vrde/i3-quiet)
+
+
+
+#####Costumize ranger to show lines splitting the menues (see image ranger.png in assests/images/ranger.png file )
+i-add image viewer in ranger
