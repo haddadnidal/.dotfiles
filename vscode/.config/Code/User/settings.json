@@ -5,7 +5,7 @@
     "workbench.tree.renderIndentGuides": "always",
     "editor.fontSize": 16,
     "workbench.startupEditor": "newUntitledFile",
-    "editor.wordWrapColumn": 120,
+    "editor.wordWrapColumn": 140,
     "editor.wordWrap": "bounded",
     "python.formatting.autopep8Args": [
         "--max-line-length=150"
