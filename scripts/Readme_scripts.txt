@@ -18,7 +18,7 @@
 stow -vRt ~ vscode  
 
 2-put a package to install file
-  i- polybar script (https://github.com/ayosec/polybar-debian)
+  i- polybar package (https://github.com/ayosec/polybar-debian/releases/download/3.4.2-1/polybar_3.4.2-1_amd64_debian.buster.deb)
   ii- i3-gaps script ( https://github.com/Airblader/i3/wiki/Building-from-source)
   iii- install fonts script
 
