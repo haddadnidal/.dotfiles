@@ -1,9 +1,10 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/nidal/.oh-my-zsh"
-#export PATH="$HOME/.local/bin"
+export PATH=$HOME/.local/bin:$HOME/.dotfiles/scripts:$PATH
+#export PATH='/home/nidal/.local/bin'
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -31,7 +32,7 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%F{white}"
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%F{white} "
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir dir_writable_joined)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time
-                                    vcs background_jobs_joined time_joined)
+vcs background_jobs_joined time_joined)
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND="clear"
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND="clear"
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND="yellow"
@@ -115,7 +116,7 @@ POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND='green'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions docker)
+plugins=(docker git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -144,5 +145,23 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="nano ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#alias scripts="cd /media/share/nidal/Scripts"
+alias scripts="cd /media/share/nidal/Scripts"
 alias update="sudo apt-get update && sudo apt-get upgrade"
+
+#############################
+###
+###History settings
+###
+############################
+export HISTSIZE=100000  # history size
+export HISTFILESIZE=100000 # history file size
+export HISTFILE=~/.zhistory # history location
+
+setopt HIST_FIND_NO_DUPS #No duplicats  will be shown during toggle up and downs
+
+setopt inc_append_history # share history on multiple shells
+setopt share_history #share history on multiple shells
+
+#VI mode 
+bindkey -v
+export KEYTIMEOUT=1
