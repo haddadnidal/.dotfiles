@@ -1,1 +1,6 @@
 1-volume binding with mouse 
+2- kpcli password copy 
+3- swaybar 
+4- fader python.  
+i- install  i3ipc packet : python3 -m pip install i3ipc
+ii- add the fader.py script to launch at exec.  exec python3 ~/.config/sway/scripts/fader.py
