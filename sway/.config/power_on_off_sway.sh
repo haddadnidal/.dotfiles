@@ -13,7 +13,7 @@ if [ -f $HOME/.config/rofi-power/config ]; then
 else
     LAUNCHER="rofi -width 30 -dmenu -i -p rofi-power:"
     USE_LOCKER="false"
-    LOCKER="i3lock"
+    LOCKER=$HOME/.dotfiles/sway/.config/lock_wayland.sh
 fi
 
 # Show exit wm option if exit command is provided as an argument

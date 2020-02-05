@@ -147,6 +147,7 @@ alias zshconfig="nano ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias scripts="cd /media/share/nidal/Scripts"
 alias update="sudo apt-get update && sudo apt-get upgrade"
+alias gdiff="git difftool --no-symlinks --dir-diff"
 
 #############################
 ###
@@ -162,6 +163,6 @@ setopt HIST_FIND_NO_DUPS #No duplicats  will be shown during toggle up and downs
 setopt inc_append_history # share history on multiple shells
 setopt share_history #share history on multiple shells
 
-#VI mode 
+#VI mode
 bindkey -v
 export KEYTIMEOUT=1
