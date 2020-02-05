@@ -231,11 +231,14 @@ include /usr/local/etc/sway/config.d/*
  output * bg /usr/local/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
 
+###bind mousewheel left and right to volume up and down
+bindsym --whole-window  $mod+button6 exec pactl set-sink-volume 1 -3%
+bindsym --whole-window  $mod+button7 exec pactl set-sink-volume 1 +3%
 
 
+# class                 border  backgr. text    indicator child_border
 
+client.focused          #4c7899 #285577 #ffffff #2e9ef4   #ffffff
 
-# class                 border  backgr. text    indicator child_border                                                                     
-client.focused_inactive #0d1010 #212121 #d9d9d9 #0d1010 #063340                                                                            
-client.unfocused        #0d1010 #212121 #d9d9d9 #424242 #063340                                                                            
-client.focused          #d9d9d9 #cecece #000000 #d9d9d9 #d9d9d9  
+#remove mouse focus follow
+focus_follows_mouse no
