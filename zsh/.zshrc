@@ -148,7 +148,7 @@ alias zshconfig="nano ~/.zshrc"
 alias scripts="cd /media/share/nidal/Scripts"
 alias update="sudo apt-get update && sudo apt-get upgrade"
 alias gdiff="git difftool --no-symlinks --dir-diff"
-
+alias kdiff="kitty +kitten diff"
 #############################
 ###
 ###History settings
