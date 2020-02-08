@@ -188,7 +188,7 @@ bindsym $mod+r mode "resize"
 #My Mods ( Nidal)
 #
 #bind a key to lock the PC
-bindsym $mod+Shift+Delete  exec $HOME/.dotfiles/scripts/power-on-off-i3.sh
+bindsym $mod+Shift+Delete  exec $HOME/.dotfiles/i3/.config/power_on_off_i3.sh
 
 for_Window [class="."] border pixel 2
 #Sound
