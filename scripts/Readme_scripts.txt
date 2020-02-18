@@ -1,7 +1,15 @@
+ ! hi 
+ // done 
+ ? really ? 
+ todo this must be done 
+ * this 
+
+
 ##lock.sh 
+// Done
 #script that takes a screenshot of the current desktop and make a background image for i3lock.
 ##!!need imagemagic "sudo apt-get install imagemagic"
-
+ 
 #clipboard_copy.sh
 ##a script that takes a file as input and copy its output to clipboard to paste 
 ##!!need xclip "sudo apt-get install xclip"
@@ -22,7 +30,8 @@ stow -vRt ~ vscode
   ii- i3-gaps script ( https://github.com/Airblader/i3/wiki/Building-from-source)
   iii- install fonts script
 
-3-i3 shutdown menu
+3-i3 shutdown menu 
+// Done 
   i-modify the i3 settings to execute the script
 
   bindsym $mod+Shift+Delete  exec $HOME/.dotfiles/scripts/power-on-off-i3.sh

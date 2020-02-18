@@ -163,6 +163,10 @@ setopt HIST_FIND_NO_DUPS #No duplicats  will be shown during toggle up and downs
 setopt inc_append_history # share history on multiple shells
 setopt share_history #share history on multiple shells
 
-#VI mode
-bindkey -v
-export KEYTIMEOUT=1
+#emacs mode
+bindkey -e
+#export KEYTIMEOUT=1
+
+
+#Enable reverse search in zsh
+#bindkey '^R' history-incremental-search-backward

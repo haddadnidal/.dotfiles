@@ -133,7 +133,7 @@ assign [class="Firefox-esr"] 2
 
 # move focused container to workspace
 bindsym $mod+Shift+ampersand move container to workspace $ws1
-bindsym $mod+Shift+eacute move container to workspace $ws2C
+bindsym $mod+Shift+eacute move container to workspace $ws2
 bindsym $mod+Shift+quotedbl move container to workspace $ws3
 bindsym $mod+Shift+apostrophe move container to workspace $ws4
 bindsym $mod+Shift+parenleft move container to workspace $ws5
@@ -202,6 +202,7 @@ bindsym --whole-window  $mod+button6 exec pactl set-sink-volume 1 -3%
 bindsym --whole-window  $mod+button7 exec pactl set-sink-volume 1 +3%
 
 #Automatic launch
+exec --no-startup-id exec dunst
 exec --no-startup-id exec python3 ~/.dotfiles/sway/.config/fader.py
 exec --no-startup-id exec ~/.dropbox-dist/dropboxd
 
