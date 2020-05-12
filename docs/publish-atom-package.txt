@@ -1,3 +1,2 @@
 1-Create a github repo
-2-
-3-apm pusblish --tag "tage-number" "minor|major"
+2-apm pusblish --tag "tag-number" "minor|major"
