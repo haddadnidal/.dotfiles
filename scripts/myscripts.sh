@@ -3,7 +3,7 @@
 #----List all scripts with their desciptions.
 
 # get all scripts
-path="$HOME/.dotfiles/scripts"
+chemin="$HOME/.dotfiles/scripts"
 
 get_description()
 {
@@ -11,9 +11,9 @@ get_description()
 }
 
 printf "\n"
-for var in `ls  $path | grep ".sh" `
+for var in `ls  $chemin | grep ".sh"`
 #do echo -e  "$var \t\t\t`get_description $var`"
 #do printf "%-30s"  $var
-do printf "%-50s %10s\n"  $var  "`get_description $var`"
+do printf "%-50s %10s\n"  $var   "`get_description $chemin/$var`"
 done
 printf "\n"
